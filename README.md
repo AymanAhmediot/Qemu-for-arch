@@ -44,7 +44,7 @@ sudo virsh net-autostart default
 cat /proc/sys/net/ipv4/ip_forward
 ```
 
-If it 1 that means it enable if else enable it be that command 
+If it shows 1 that means it enable if else enable it be that command 
 
 ```
 echo "net.ipv4.ip_forward=1" | sudo tee -a /etc/sysctl.conf
@@ -71,6 +71,8 @@ sudo iptables -A FORWARD -i virbr0 -j ACCEPT
 sudo iptables -A FORWARD -o virbr0 -m conntrack --ctstate RELATED,ESTABLISHED -j ACCEPT
 ```
 Reset virt network interface 
+
+# I wish that simple guide will help you and thanks for reading 
 
 ```
 sudo virsh net-destroy default
