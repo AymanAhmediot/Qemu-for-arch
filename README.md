@@ -6,16 +6,16 @@
 
 ## In file add `/etc/libvirt/libvirtd.conf`
 
-``
+```
 unix_sock_group = "libvirt"
 unix_sock_rw_perms = "0770"
-``
+```
 ## Then add your user and create group:
 
-``
+```
 sudo usermod -a -G libvirt $(whoami)
 newgrp libvirt
-``
+```
 
 ### After adding your user reboot the system.
 
