@@ -2,9 +2,9 @@
 
 ## QEMU/KVM Dependancies to install:
 
-``sudo pacman -S qemu virt-manager virt-viewer dnsmasq vde2 bridge-utils openbsd-netcat ebtables iptables libguestfs --needed``
+```sudo pacman -S qemu virt-manager virt-viewer dnsmasq vde2 bridge-utils openbsd-netcat ebtables iptables libguestfs --needed```
 
-## In file add `/etc/libvirt/libvirtd.conf`
+## In file add ``/etc/libvirt/libvirtd.conf``
 
 ```
 unix_sock_group = "libvirt"
